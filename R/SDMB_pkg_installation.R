@@ -1,15 +1,17 @@
-# install recent versions of R and RStudio, and then run the commands below to install the packages we'll need
+# check RStudio menu option "Code - Soft Wrap Long Lines" and READ THE INSTRUCTIONS below!
+
+# install recent versions of R and RStudio, then run the commands below to install the required packages
 
 # install even packages you already had, as we'll need updated versions!
 
-# do this in a clean R session, before loading any packages
+# if you get an error message about Rtools, follow the instructions in that message -- it may involve installing the Rtools software (outside R) and adding it to the path following the instructions in the link provided in the error message
 
 # EVERY TIME you get a message complaining about a package or its namespace, (re)install that package [e.g. `install.packages("Rcpp")` ] and try again
 
 # after installing all packages, load each one with library() and check if there are more error messages, in which case do as above
 
 
-install.packages("terra")
+install.packages("terra")  # if you have installation errors (other than missing R packages that you can install), see additional instructions at https://github.com/rspatial/terra
 install.packages("geodata")
 install.packages("jsonlite")  # required by geodata::sp_occurrence()
 install.packages("sdmpredictors")
